@@ -1,0 +1,183 @@
+body {
+  background: rgba(229, 98, 27, 0.76);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ef731a, #a96840);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f6f5f4, #0c0c0c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Roboto", sans-serif;
+  font-size: smaller;
+  background-attachment: fixed;
+}
+.container{
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 30px;
+  height: max-content;
+  background-color: white;
+  max-width: 1200px;
+  height: 460px;
+}
+.backgroundImg{
+  border-radius: 30px;
+  width: 40%;
+  height: 60%;
+  justify-content: center;
+  align-self: center;
+}
+.head{
+  width: 100.1%;
+  height: 80px;
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* From https://css.glass */
+  background: rgba(220, 25, 25, 0.35);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(147, 42, 42, 0.1);
+  backdrop-filter: blur(10.9px);
+  -webkit-backdrop-filter: blur(10.9px);
+  border: 1px solid rgba(18, 14, 14, 0.3);
+  position: absolute;
+  align-content: center;
+  justify-content: space-evenly;
+  align-self: center;
+}
+.card{
+  width: 1200px;
+  position: absolute;
+  display: flex;
+
+}
+.foot{
+  width: 100%;
+  margin-top: 380px;
+  position: absolute;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footImg{
+  border-radius: 30px;
+  height: 80px;
+  width: 35%;
+  align-self: center;
+}
+.btn.btn-light{
+  width: 75px;
+  border-radius: 30px;
+  height: 30px;
+  color: black;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.87);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: small;
+  font-weight: bolder ;
+}
+
+.btn.btn-light:hover{
+  width: 100px;
+  border-radius: 30px;
+  height: 40px;
+  color: white;
+  /* From https://css.glass */
+  background: rgba(241, 59, 91, 0.98);
+  box-shadow: 0 4px 30px rgba(206, 25, 128, 0.89);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.shape1{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff7f50;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin-top: 13%;
+  margin-left: 10%;
+}
+.shape2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #427ae8;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 275px;
+  margin-left: 20px;
+}
+.shape3{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d035;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 90px;
+  margin-left: 920px;
+}
+.shape4{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 241, 43);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 275px;
+  margin-left: 1020px;
+}
+.direct{
+  font-size: x-large;
+  font-weight: bolder;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.material-icons{
+  margin: 0px;
+  font-size: 50px;
+}
+.process{
+  margin-top: 100px;
+  margin-left: 350px;
+  width: 500px;
+  border-radius: 30px;
+  opacity: 0.5;
+  position: absolute;
+}
+
+
