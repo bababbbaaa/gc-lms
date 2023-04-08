@@ -16,9 +16,8 @@ class CreateSectorsTable extends Migration
         Schema::create('sectors', function (Blueprint $table) {
             $table->id();
             $table->string('sector_name', 128)->nullable();
-            $table->string('e_tutorial')->nullable();
-            $table->string('e_content')->nullable();
-            $table->string('assessments')->nullable();
+            $table->string('symbol_img_path')->nullable();
+            $table->string('student_count')->nullable();
             $table->enum('status', ['active','pending', 'inactive'])->default('active');
             $table->timestamps();
             $table->softDeletes();

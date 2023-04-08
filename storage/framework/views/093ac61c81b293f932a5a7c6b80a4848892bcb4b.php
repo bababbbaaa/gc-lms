@@ -30,6 +30,12 @@
           <img alt="phone" src="/assets/default/img/img_1.png" style="width:325px;height:60px;">
         </li>
         <li class="nav-item">
+          <a href="<?php echo e(url('')); ?>" class="nav-link" style="font-size: large;font-weight: bolder;">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" style="font-size: large;font-weight: bolder;" data-toggle="tab" value="e-tutorial" role="tab" onclick="showNewContent(this.innerText)">
             <i class="material-icons">local_library</i>
             E-Tutorial

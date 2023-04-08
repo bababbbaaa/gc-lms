@@ -21,6 +21,8 @@ use App\Models\Sector;
 use App\Models\Webinar;
 use App\Models\Testimonial;
 use App\Models\Etutorial;
+use App\Models\Econtent;
+use App\Models\Assessment;
 use App\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
@@ -344,7 +346,9 @@ class SectorDetailController extends Controller
         $pageDescription = !empty($seoSettings['description']) ? $seoSettings['description'] : trans('home.home_title');
         $pageRobot = getPageRobot('home');
         $sectors = Sector::all();
-        $Etutorial = Etutorial::all();
+        $Etutorial = Etutorial::where('deleted_at',null)->get();
+        $Econtent = Econtent::where('deleted_at',null)->get();
+        $Assessment = Assessment::where('deleted_at',null)->get();
 
         $data = [
             'pageTitle' => $pageTitle,
@@ -380,6 +384,8 @@ class SectorDetailController extends Controller
             'forumSection' => $forumSection ?? null,
             'sectors' => $sectors ?? null,
             'Etutorial' => $Etutorial ?? null,
+            'Econtent' => $Econtent ?? null,
+            'assessments' => $Assessment ?? null,
         ];
 
         return view(getTemplate() . '.pages.sector.sector-details',$data);

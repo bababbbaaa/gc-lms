@@ -165,6 +165,7 @@ class RegisterController extends Controller
         }
 
         $verificationController = new VerificationController();
+        return redirect('/login');
         $checkConfirmed = $verificationController->checkConfirmed($user, $registerMethod, $value);
 
         $referralCode = $request->get('referral_code', null);

@@ -17,7 +17,10 @@ class CreateEContentsTable extends Migration
             $table->id();
             $table->string('content_name')->nullable();
             $table->string('content_type')->nullable();
-            $table->string('type')->nullable();
+            $table->string('uploaded_by')->nullable();
+            $table->string('no_of_views')->nullable();
+            $table->string('content_path')->nullable();
+            $table->string('sector_id')->nullable();
             $table->enum('status', ['active','pending', 'inactive'])->default('active');
             $table->timestamps();
             $table->softDeletes();

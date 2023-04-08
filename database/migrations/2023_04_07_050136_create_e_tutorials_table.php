@@ -20,6 +20,7 @@ class CreateETutorialsTable extends Migration
             $table->string('uploaded_by')->nullable();
             $table->string('no_of_views')->nullable();
             $table->string('tutorial_path')->nullable();
+            $table->string('sector_id')->nullable();
             $table->enum('status', ['active','pending', 'inactive'])->default('active');
             $table->timestamps();
             $table->softDeletes();

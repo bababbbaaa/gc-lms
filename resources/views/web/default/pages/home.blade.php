@@ -31,14 +31,29 @@
 
                 @if($heroSection == "2")
                 <div class="stats-container">
-                        <div class="container">
+                <div class="container">
+                <div class="card card-nav-tabs">
+                    <div class="row">
+                        @foreach($sectors as $sector)
+                        <div class="col-3">
+                            <div class="card sector">
+                            <img class="sectorImage" src="/assets/default/iconImg/{{$sector->symbol_img_path}}" alt=""/>
+                                <h2 class="sectorName">{{ $sector->sector_name }}</h2>
+                                <h6 class="enroll">{{ $sector->student_count }}</h6>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+                        <!-- <div class="container">
                             <div class="row">
                                 @foreach($sectors as $sector)
                                 <div class="col-sm-6 col-lg-3 mt-25 mt-lg-0">
                                     <a href="{{url('sector-details')}}/{{$sector->id}}">
                                     <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
                                         <div class="stat-icon-box teacher">
-                                            <!-- <img src="/assets/default/img/stats/teacher.svg" alt=""/> -->
+                                            <img src="/assets/default/iconImg/stats/teacher.svg" alt=""/>
                                         </div>
                                         <strong class="stat-number mt-10"></strong>
                                         <h4 class="stat-title"></h4>
@@ -48,7 +63,7 @@
                                 </div>
                                 @endforeach
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- <div class="row slider-content align-items-center hero-section2 flex-column-reverse flex-md-row">
                         <div class="col-12 col-md-7 col-lg-6">
